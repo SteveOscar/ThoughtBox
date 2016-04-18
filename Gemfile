@@ -11,6 +11,7 @@ gem 'pg'
 gem 'faraday'
 gem 'responders'
 gem 'react-rails'
+gem 'validate_url'
 
 group :development, :test do
   gem 'byebug'

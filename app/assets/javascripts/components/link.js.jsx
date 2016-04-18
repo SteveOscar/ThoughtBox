@@ -4,6 +4,7 @@ var Link = React.createClass({
   },
 
   render() {
+    console.log(this.props.link.read)
     var title = this.state.editable ? <input ref='title' type='text' defaultValue={this.props.link.title} />
                                    : <h3 className='link-title'>{this.props.link.title}</h3>;
 
