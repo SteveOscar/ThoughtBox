@@ -35,4 +35,15 @@ class Api::V1::LinksControllerTest < ActionController::TestCase
     assert_response :success
     assert final_count <  initial_count
   end
+
+  test "#update" do
+    id = Link.first.id
+    initial_title = Link.first.title
+    patch :update, id: id, link: { title: 'new title'}, format: :json
+
+    final_count = Link.count
+    assert_response :success
+    assert initial_title !=  Link.first.title
+    assert_equal Link.first.title, 'new title'
+  end
 end
