@@ -49,11 +49,18 @@ var Body = React.createClass({
     this.setState({links: newState})
   },
 
+  handleSearch(term) {
+
+  },
+
   render() {
     return (
       <div>
         <div>
           <NewLink user_id={this.props.user_id} handleSubmit={this.handleSubmit} />
+        </div>
+        <div>
+          <Search user_id={this.props.user_id} handleSearch={this.handleSearch} />
         </div>
         <div>
           <AllLinks links={this.state.links} handleDelete={this.handleDelete} handleUpdate={this.handleUpdate} />
