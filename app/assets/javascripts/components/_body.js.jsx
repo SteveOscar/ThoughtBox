@@ -4,6 +4,24 @@ var Body = React.createClass({
     return { links: [] }
   },
 
+  handleDelete(id) {
+    $.ajax({
+      url: `/api/v1/links/${id}`,
+      type: 'DELETE',
+      success: () => {
+        this.removeLinkFromDOM(id);
+      }
+    });
+  },
+
+  removeLinkFromDOM(id) {
+    var newLinks = this.state.links.filter((link) => {
+      return link.id != id;
+    });
+
+    this.setState({ links: newLinks });
+  },
+
   componentDidMount() {
     $.getJSON('/api/v1/links.json',
               {user_id: this.props.user_id},
@@ -14,7 +32,7 @@ var Body = React.createClass({
     var newState = this.state.links.concat(link);
     this.setState({links: newState})
   },
-  
+
   render() {
     return (
       <div>
@@ -22,7 +40,7 @@ var Body = React.createClass({
           <NewLink user_id={this.props.user_id} handleSubmit={this.handleSubmit} />
         </div>
         <div>
-          <AllLinks links={this.state.links} />
+          <AllLinks links={this.state.links} handleDelete={this.handleDelete} />
         </div>
       </div>
     );
