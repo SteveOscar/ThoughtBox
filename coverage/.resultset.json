@@ -1,19 +1,25 @@
 {
   "MiniTest": {
     "coverage": {
+      "/Users/stevenolson/Turing/4module/ThoughtBox/app/models/link.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/stevenolson/Turing/4module/ThoughtBox/app/models/user.rb": [
         1,
         1,
         1,
         1,
         1,
+        1,
         null,
         null,
         null,
         1,
-        1,
+        2,
         null,
-        1,
+        2,
         null,
         null
       ],
@@ -114,8 +120,50 @@
         null,
         null,
         null
+      ],
+      "/Users/stevenolson/Turing/4module/ThoughtBox/app/controllers/api/v1/base_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/stevenolson/Turing/4module/ThoughtBox/app/controllers/api/v1/links_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ]
     },
-    "timestamp": 1460996582
+    "timestamp": 1460997569
   }
 }

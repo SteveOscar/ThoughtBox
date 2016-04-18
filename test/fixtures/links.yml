@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  url: www.example.com/link1
+  title: Motorcycles
+  read: false
+  user_id: 1
+
+two:
+  url: www.example.com/link2
+  title: Beer
+  read: false
+  user_id: 2
