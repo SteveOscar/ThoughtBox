@@ -2,3 +2,4 @@
   <h2>Links Page</h2>
   <%= link_to("Log Out", logout_path, class: "waves-effect waves-light btn right") %>
 </div>
+<%= react_component 'Main', user_id: session[:user_id] %>
