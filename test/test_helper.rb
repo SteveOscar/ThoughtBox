@@ -21,6 +21,12 @@ end
 module ActionDispatch
   class IntegrationTest
     include Capybara::DSL
+    def setup
+      Rails.cache.clear
+    end
 
+    def teardown
+      reset_session!
+    end
   end
 end
