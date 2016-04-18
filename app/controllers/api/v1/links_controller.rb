@@ -18,6 +18,6 @@ class Api::V1::LinksController < Api::V1::BaseController
    private
 
     def link_params
-      params.require(:link).permit(:title, :url, :user_id)
+      params.require(:link).permit(:title, :url, :read, :user_id)
     end
   end
