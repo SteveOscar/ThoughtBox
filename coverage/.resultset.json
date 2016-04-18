@@ -1,0 +1,51 @@
+{
+  "MiniTest": {
+    "coverage": {
+      "/Users/stevenolson/Turing/4module/ThoughtBox/app/controllers/site_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/stevenolson/Turing/4module/ThoughtBox/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/stevenolson/Turing/4module/ThoughtBox/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/stevenolson/Turing/4module/ThoughtBox/app/controllers/welcome_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1460993331
+  }
+}
