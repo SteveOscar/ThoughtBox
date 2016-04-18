@@ -25,4 +25,14 @@ class Api::V1::LinksControllerTest < ActionController::TestCase
     assert_response :success
     assert final_count >  initial_count
   end
+
+  test "#destroy" do
+    id = Link.first.id
+    initial_count = Link.count
+    delete :destroy, id: id, format: :json
+
+    final_count = Link.count
+    assert_response :success
+    assert final_count <  initial_count
+  end
 end
