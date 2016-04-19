@@ -1,6 +1,6 @@
 class Api::V1::LinksController < Api::V1::BaseController
     def index
-      respond_with Link.where(user_id: params[:user_id])
+      respond_with Link.where(user_id: link_params[:user_id])
     end
 
     def create

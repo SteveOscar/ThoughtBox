@@ -41,16 +41,16 @@ var Body = React.createClass({
   },
 
   componentDidMount() {
-    $.getJSON('/api/v1/links.json', (response) => { this.setState({ links: response }) });
+    $.getJSON('/api/v1/links.json', {link: { user_id: this.props.user_id }}, (response) => { this.setState({ links: response }) });
   },
 
   handleSubmit(link) {
     var newState = this.state.links.concat(link);
-    this.setState({links: newState})
+    this.setState({links: newState});
   },
 
-  handleSearch(term) {
-
+  handleSearch(links) {
+    this.setState({links: links});
   },
 
   render() {
@@ -60,7 +60,7 @@ var Body = React.createClass({
           <NewLink user_id={this.props.user_id} handleSubmit={this.handleSubmit} />
         </div>
         <div>
-          <Search user_id={this.props.user_id} handleSearch={this.handleSearch} />
+          <Search user_id={this.props.user_id} links={this.state.links} handleSearch={this.handleSearch} />
         </div>
         <div>
           <AllLinks links={this.state.links} handleDelete={this.handleDelete} handleUpdate={this.handleUpdate} />
