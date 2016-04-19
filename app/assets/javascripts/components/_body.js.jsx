@@ -60,6 +60,9 @@ var Body = React.createClass({
           <NewLink user_id={this.props.user_id} handleSubmit={this.handleSubmit} />
         </div>
         <div>
+          <Sort user_id={this.props.user_id} links={this.state.links} handleSort={this.handleSearch} />
+        </div>
+        <div>
           <Search user_id={this.props.user_id} links={this.state.links} handleSearch={this.handleSearch} />
         </div>
         <div>
