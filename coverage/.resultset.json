@@ -27,6 +27,34 @@
         null,
         null
       ],
+      "/Users/stevenolson/Turing/4module/ThoughtBox/app/controllers/sessions_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/stevenolson/Turing/4module/ThoughtBox/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
       "/Users/stevenolson/Turing/4module/ThoughtBox/app/controllers/site_controller.rb": [
         1,
         1,
@@ -58,43 +86,6 @@
         null,
         null
       ],
-      "/Users/stevenolson/Turing/4module/ThoughtBox/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/stevenolson/Turing/4module/ThoughtBox/app/controllers/welcome_controller.rb": [
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/stevenolson/Turing/4module/ThoughtBox/app/controllers/sessions_controller.rb": [
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        2,
-        2,
-        2,
-        2,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
       "/Users/stevenolson/Turing/4module/ThoughtBox/app/controllers/api/v1/links_controller.rb": [
         1,
         1,
@@ -116,7 +107,7 @@
         1,
         null,
         1,
-        2,
+        3,
         null,
         null
       ],
@@ -132,6 +123,15 @@
         1,
         0,
         0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/stevenolson/Turing/4module/ThoughtBox/app/controllers/welcome_controller.rb": [
+        1,
+        null,
+        1,
         null,
         null,
         null,
@@ -168,6 +168,6 @@
         null
       ]
     },
-    "timestamp": 1461023082
+    "timestamp": 1461026226
   }
 }
