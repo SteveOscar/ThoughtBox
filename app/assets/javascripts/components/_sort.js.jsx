@@ -20,10 +20,11 @@ var Sort = React.createClass({
   render() {
     return (
       <div>
-      <button type="button"
-              className="red"
-              onClick={this.handleSort.bind(this)}>Sort
-      </button>
+        <br/>
+        <button type="button"
+                className="red"
+                onClick={this.handleSort.bind(this)}>Sort
+        </button>
       </div>
     );
   }

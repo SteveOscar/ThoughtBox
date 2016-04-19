@@ -10,7 +10,7 @@ var NewLink = React.createClass({
       type: 'POST',
       data: { link: { title: title, url: url, user_id: user_id } },
       success: (link) => {
-        this.props.handleSubmit(link)
+        this.props.handleSubmit(link);
       }
     });
   },
@@ -18,10 +18,11 @@ var NewLink = React.createClass({
   render() {
     return (
       <div>
+        <h2>Add New Link</h2>
         <input ref='title' placeholder='Enter link title' />
         <input ref='url' placeholder='URL' />
         <button onClick={this.handleClick}>Submit</button>
       </div>
-    )
+    );
   }
 });
